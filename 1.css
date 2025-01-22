@@ -1,0 +1,84 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #33333300;
+    border: 3px red dotted;
+  }
+  
+  li {
+    float: left;
+  
+  }
+  
+  li a {
+    display: block;
+    color: rgb(212, 18, 18);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ 
+  }
+  
+  li a:hover {
+    background-color: #11111100;
+  
+  }
+  .container {
+    display: flex; /* Makes children (articles) display in a row */
+    justify-content: space-between; /* Spaces the articles evenly */
+    gap: 20px; /* Adds consistent space between the articles */
+    width: 900px; /* Fixed width of 900px */
+    height: 200px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 10px; /* Optional: Adds padding around the container */
+}
+
+/* Styling for each article */
+.container article {
+    background-color: rgba(211, 211, 211, 0); /* Background color */
+    padding: 20px; /* Internal padding for spacing inside the articles */
+    text-align: center; /* Center-align text inside the articles */
+    width: 30%; /* Each article takes up 30% of the container's width */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    border: 3px red dotted;
+}
+
+section {
+  display: flex; /* Arrange article and aside side by side */
+  max-width: 880px; /* Maximum width of the section */
+  height: 1800px;
+  margin: 0 auto; /* Centers the section horizontally */
+  padding: 20px; /* Optional padding inside the section */
+  border: 3px dotted red; /* Outline the entire section with a dotted red line */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+/* Article styling */
+article {
+  flex: 3; /* Takes up more space compared to aside */
+  margin-right: 20px; /* Adds space between article and aside */
+  padding: 20px;
+  border: 3px dotted red; /* Outline article with a dotted red line */
+  margin: 10px;
+  text-align: center;
+}
+
+/* Aside styling */
+aside {
+  flex: 1; /* Takes up less space compared to article */
+  padding: 20px;
+  border: 3px dotted red; /* Outline aside with a dotted red line */
+  margin: 5px;
+  text-align: center;
+}
+footer {
+  max-width:full; /* Same max-width as section */
+  margin: 20px auto 0; /* Center the footer and add some top margin */
+  padding: 20px;
+  text-align: center; /* Center align the footer content */
+  border: 3px dotted red; /* Dotted red border around footer */
+  box-sizing: border-box;
+
+}
